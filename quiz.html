@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TP1 Quiz</title>
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+    <div id="quiz" class="conteneur">
+        <div class="titre"> LE GRAND QUIZ</div>
+        <form id="ChoixNiveau">
+            <input type="radio" id="facile" name="type" value="facile"> Novice<br>
+            <input type="radio" id="difficile" name="type" value="difficile"> Expert<br>
+            <input type="button" id="submit" value="Envoyer" onclick="RandomizeQuestion();">
+        </form>
+        <div id="conteneurQuiz">
+            <div id="question" class="question"></div>
+            <div class="reponse">
+            <label class="option"><input type="radio" name="option" id="check1" value="0"/><span id="choix1"></span></label> 
+            <label class="option"><input type="radio" name="option" id="check2" value="1"/><span id="choix2"></span></label>
+            <label class="option"><input type="radio" name="option" id="check3" value="2"/><span id="choix3"></span></label>
+            </div>
+            <button id="button" class="btn-quiz" onclick="validerQuestion();">Suivant</button>
+            <button id="button" class="btn-quiz" onclick="stop();">Quitter</button>
+            <span id="erreur" class="erreur-quiz">Aucune réponse selectionnée</span>
+        </div>
+        <div id="conteneurResultat">
+            <div id="resultat"></div>
+            <div id="total"></div>
+        </div>
+  </div>
+        <div id="resultat" class="conteneur resultat" style="display:none;"></div>
+    <script src="js/questions.js"></script>
+    <script src="js/quiz.js"></script>
+</body>
+</html>

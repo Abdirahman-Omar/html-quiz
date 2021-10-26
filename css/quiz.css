@@ -1,0 +1,99 @@
+html, 
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: #444;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: aqua;
+    background-image: url(../images/thinking.png);
+    
+   
+}
+
+.conteneur {
+    height: 330px;
+    width: 1000px;
+    position: absolute;
+    top:20%;
+    left:25%;
+    background-color: white;
+    padding: 20px;
+    border:2px solid;
+}
+
+
+
+.titre {
+   padding-top: 20px;
+    font-size: 36px;
+    text-align: center;
+     
+}
+
+.question{
+    padding:20px;
+    font-size: 22px;
+    background:blue;
+    border: solid black;
+    margin: 10px 0 10px 0;
+    color:white;
+}
+
+.option{
+    width:350px;
+    display: inline-block;
+    padding: 10px 0 10px 15px;
+    vertical-align: middle;
+    background: green;
+    margin: 5px 10px 5px 10px;
+    color:white;
+    font-size: 20px;
+    border: solid black;
+}
+
+.option:hover{
+    background:greenyellow;
+    color: black;
+}
+
+.btn-quiz{
+border:none;
+outline:none;
+background: purple;
+font-size: 20px;
+width: 100px;
+height: 35px;
+border-radius: 15px;
+margin-top:10px;
+cursor: pointer;
+}
+
+.btn-quiz:hover{
+    color: white;
+}
+
+.resultat{
+    height: 100px;
+    text-align: center;
+    font-size:75px
+}
+
+.option input:checked .option{
+    background: gold;
+    color: black;
+}
+
+.erreur-quiz {
+    display:none;
+}
+
+#conteneurQuiz, #conteneurResultat {
+    display: none;
+}
+
+#submit{
+    position: absolute;
+    bottom: 50px;
+}
